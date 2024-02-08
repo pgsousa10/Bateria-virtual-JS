@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bateria Virtual | JS</title>
+
+        <link rel="stylesheet" href="estilo/style.css">
+
+        <link rel="shortcut icon" href="imagens/bateria-ico.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Nome da bateria -->
+        <h1>Bateria Virtual</h1>
+        <!-- Saidas de audio da bateria -->
+        <div class="keys">
+            <div data-key="keya" class="key">
+                A
+            </div>
+            <div data-key="keys" class="key">
+                S
+            </div>
+            <div data-key="keyd" class="key">
+                D
+            </div>
+            <div data-key="keyf" class="key">
+                F
+            </div>
+            <div data-key="keyg" class="key">
+                G
+            </div>
+            <div data-key="keyh" class="key">
+                H
+            </div>
+            <div data-key="keyj" class="key">
+                J
+            </div>
+            <div data-key="keyk" class="key">
+                K
+            </div>
+            <div data-key="keyl" class="key">
+                L
+            </div>
+        </div>
+        <!-- Composição completa para bateria -->
+        <div class="composer">
+            <input type="text" name="txtinp" id="input" placeholder="Faça uma composição...">
+            <button>Tocar</button>
+        </div>
+        <!-- Rodapé -->
+        <footer>
+            Desafio do <a href="https://courses.wesbos.com/account/access/65a2d8775a6f837cc513cfea/view/194130650" target="_blank">Wesbos.</a> 
+            Codificado por <a href="https://github.com/pgsousa10" target="_blank">Pedro Gonçalves.</a>
+        </footer>
+        <!-- Audios para teclas da bateria -->
+        <audio id="s_keya" src="sounds/keya.wav"></audio>
+        <audio id="s_keys" src="sounds/keys.wav"></audio>
+        <audio id="s_keyd" src="sounds/keyd.wav"></audio>
+        <audio id="s_keyf" src="sounds/keyf.wav"></audio>
+        <audio id="s_keyg" src="sounds/keyg.wav"></audio>
+        <audio id="s_keyh" src="sounds/keyh.wav"></audio>
+        <audio id="s_keyj" src="sounds/keyj.wav"></audio>
+        <audio id="s_keyk" src="sounds/keyk.wav"></audio>
+        <audio id="s_keyl" src="sounds/keyl.wav"></audio>
+
+        <script src="script.js"></script>
+    </body>
+</html>

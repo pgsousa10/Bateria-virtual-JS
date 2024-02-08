@@ -1,0 +1,158 @@
+/* 
+    Foram utilizadas
+    Desktop: 1440
+    Mobile: 375
+*/
+
+/* font-family: 'Protest Riot', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Roxo: hsl(259, 100%, 65%);
+    --Branco: hsl(0, 0%, 100%);
+    --Quase-branco: hsl(0, 0%, 94%);
+    --Cinza-esfumaçado: hsl(0, 1%, 44%);
+    --Quase-preto: hsl(0, 0%, 8%);
+}
+
+body{
+    background-image: url(../imagens/banda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    color: var(--Branco);
+    font-family: 'Protest Riot', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    padding-bottom: 30px;
+    color: var(--Quase-branco);
+    text-transform: uppercase;
+}
+
+.keys{
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+.key{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--Roxo);
+    color: var(--Branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.key .active{
+    border: 2px solid var(--Cinza-esfumaçado);
+    color: var(--Cinza-esfumaçado);
+}
+
+.composer{
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.composer #input{
+    border: none;
+    border-radius: 1rem;
+    width: 100%;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Protest Riot', sans-serif;
+    padding: 1rem;
+    background-color: hsla(0, 0%, 94%, 0.301);
+}
+
+#input::-webkit-input-placeholder{
+    text-transform: uppercase;
+    color: var(--Quase-preto);
+}
+
+.composer button{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+    border: none;
+    text-transform: uppercase;
+    background-color: hsla(0, 0%, 94%, 0.301);
+    cursor: pointer;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  
+    h1 {
+      text-align: center;
+      margin: 10px auto 5px; /* Centraliza o título e reduz a margem */
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+  
+    .keys {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px; /* Espaço entre as teclas */
+      overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+    }
+  
+    .key {
+      width: calc(33.33% - 20px); /* Ajusta o tamanho das teclas */
+      height: 50px;
+      font-size: 0.8rem; /* Reduz o tamanho da fonte das teclas */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--Roxo);
+      color: var(--Branco);
+      cursor: pointer;
+    }
+  
+    .composer {
+      width: 80%; /* Reduz a largura do compositor */
+      margin: 0 auto; /* Centraliza o compositor */
+      margin-top: 0.5rem; /* Aumenta a margem superior do compositor */
+      margin-bottom: 0.5rem; /* Aumenta a margem inferior do compositor */
+    }
+  
+    .composer input[type="text"],
+    .composer button {
+      font-size: 0.8rem; /* Reduz o tamanho da fonte do campo de texto e do botão */
+    }
+
+    #input::-webkit-input-placeholder{
+        font-size: 0.8rem;
+    }
+  
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: var(--Branco);
+    }
+  }
+    
